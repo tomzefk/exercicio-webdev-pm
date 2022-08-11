@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68dcb14b.css",
+    "main.js": "/static/js/main.cd8dfeaf.js",
+    "static/js/787.288547e0.chunk.js": "/static/js/787.288547e0.chunk.js",
+    "static/media/LOGO-WDR.svg": "/static/media/LOGO-WDR.001a7154659da641940a3120da06d040.svg",
+    "index.html": "/index.html",
+    "main.68dcb14b.css.map": "/static/css/main.68dcb14b.css.map",
+    "main.cd8dfeaf.js.map": "/static/js/main.cd8dfeaf.js.map",
+    "787.288547e0.chunk.js.map": "/static/js/787.288547e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68dcb14b.css",
+    "static/js/main.cd8dfeaf.js"
+  ]
+}
