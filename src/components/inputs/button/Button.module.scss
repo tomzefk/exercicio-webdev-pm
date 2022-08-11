@@ -1,0 +1,48 @@
+@use '../../../styles/_colors';
+@use '../../../styles/_responsive_helper';
+
+input.button {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    padding: 10px 64px;
+    border: none;
+    border-radius: 2rem;
+    background-color: colors.$white;
+
+    font-weight: 600;
+    font-size: 1rem;
+    color: colors.$main;
+
+    @include responsive_helper.media("<=tablet") {
+        width: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.primary {
+        color: colors.$white;
+        background-color: colors.$accent;
+
+        &:hover {
+            background-color: colors.$accent-dark;
+        }
+    }
+
+    &.secondary {
+        border: 1px solid colors.$grey;
+        color: colors.$main;
+
+        &:hover {
+            @include responsive_helper.media(">tablet") {
+                background-color: colors.$grey;
+            }
+        }
+
+        @include responsive_helper.media("<=tablet") {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}

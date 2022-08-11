@@ -1,0 +1,70 @@
+@use '../../../styles/_colors';
+
+label.wrapper {
+    font-size: 1rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    color: colors.$main;
+
+    &+label.wrapper {
+        margin-top: 1rem;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        background-color: #AAAAAA10;
+        /* Not removed with appearance */
+        margin: 0;
+
+        display: grid;
+        place-content: center;
+
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid colors.$grey;
+        border-radius: 1px;
+
+
+        &::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            clip-path: polygon(14% 50%, 0% 70%, 35% 100%, 100% 12%, 88% 0%, 35% 65%);
+            transform: scale(0) rotate(90deg);
+            transform-origin: center center;
+            transition: 0.25s ease-in-out;
+            background-color: colors.$white;
+
+        }
+
+        &:checked {
+            background-color: colors.$accent;
+            border-color: colors.$accent-dark;
+
+            &+* {
+                font-weight: 700;
+            }
+
+            &::before {
+                transform: scale(1.2) rotate(0deg);
+            }
+        }
+
+        // &:focus {
+        //     outline: max(2px, 0.15em) solid currentColor;
+        //     outline-offset: max(2px, 0.15em);
+        // }
+
+        &:disabled {
+            --form-control-color: var(--form-control-disabled);
+
+            color: var(--form-control-disabled);
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use '../../styles/_colors';
+
+div.accordion {
+    // max-width: 600px;
+    margin: 2rem auto;
+    
+    .accordion-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: colors.$background-dark;
+
+        &:hover {
+            background-color: colors.$grey;
+        }
+    }
+
+    .accordion-title {
+        padding: 1rem;
+    }
+    
+    .accordion-content {
+        padding: 1.8rem;
+        background-color: colors.$white;
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

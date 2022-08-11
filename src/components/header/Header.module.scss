@@ -1,0 +1,17 @@
+@use '../../styles/_colors';
+@use '../../styles/_responsive_helper';
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 8px 16px;
+
+    svg.menu-icon {
+        font-size: 2rem;
+        @include responsive_helper.media(">tablet") {
+            display: none;
+        }
+    }
+}

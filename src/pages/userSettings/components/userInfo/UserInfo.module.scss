@@ -1,0 +1,20 @@
+@use '../../../../styles/_colors';
+
+div.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // align-content: flex-start;
+    gap: 2rem 4rem;
+    // max-height: 320px;
+
+    & > div {
+        flex-basis: 35%;
+    }
+
+    & > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem 4rem;
+    }
+}

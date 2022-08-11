@@ -1,0 +1,47 @@
+@use '../styles/_colors';
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    // flex-basis: 50%;
+
+    label {
+        display: inline;
+        font-size: 1rem;
+        font-weight: 600;
+        color: colors.$main;
+    }
+
+    input {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        display: inline;
+        font-size: 1rem;
+        padding: 12px 8px;
+        border: none;
+        border-bottom: 2px solid colors.$grey;
+
+        &:focus {
+            outline: none;
+        }
+
+        &.error {
+            border-color: colors.$error;
+        }
+    }
+
+    p {
+        &.error {
+            color: colors.$error;
+            transition: 0.25s;
+
+            &.hidden {
+                height: 0;
+                margin: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@use "./styles/_responsive_helper";
+@use "./styles/_colors";
+
+div#App {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100vh;
+
+  div.container {
+    flex: 1;
+
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+
+    @include responsive_helper.media("<=tablet") {
+
+      &>* {
+        white-space: nowrap;
+        transition: 0.25s;
+      }
+
+      &>div:nth-child(1) {
+        flex: 0;
+        width: 0;
+      }
+
+      &.open {
+
+        &>div:nth-child(1) {
+          flex: 1;
+        }
+
+        &>div:nth-child(2) {
+          flex: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+      }
+    }
+
+  }
+}
