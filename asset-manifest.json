@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/exercicio-webdev-pm/static/css/main.68dcb14b.css",
-    "main.js": "/exercicio-webdev-pm/static/js/main.9f5be606.js",
+    "main.css": "/exercicio-webdev-pm/static/css/main.0d9ca32a.css",
+    "main.js": "/exercicio-webdev-pm/static/js/main.0bc0625e.js",
     "static/js/787.288547e0.chunk.js": "/exercicio-webdev-pm/static/js/787.288547e0.chunk.js",
-    "static/media/LOGO-WDR.svg": "/exercicio-webdev-pm/static/media/LOGO-WDR.001a7154659da641940a3120da06d040.svg",
+    "static/media/LOGO-WDR.svg": "/exercicio-webdev-pm/static/media/LOGO-WDR.b4f6e27a865008284b9e69c8296fdac3.svg",
     "index.html": "/exercicio-webdev-pm/index.html",
-    "main.68dcb14b.css.map": "/exercicio-webdev-pm/static/css/main.68dcb14b.css.map",
-    "main.9f5be606.js.map": "/exercicio-webdev-pm/static/js/main.9f5be606.js.map",
+    "main.0d9ca32a.css.map": "/exercicio-webdev-pm/static/css/main.0d9ca32a.css.map",
+    "main.0bc0625e.js.map": "/exercicio-webdev-pm/static/js/main.0bc0625e.js.map",
     "787.288547e0.chunk.js.map": "/exercicio-webdev-pm/static/js/787.288547e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68dcb14b.css",
-    "static/js/main.9f5be606.js"
+    "static/css/main.0d9ca32a.css",
+    "static/js/main.0bc0625e.js"
   ]
 }
